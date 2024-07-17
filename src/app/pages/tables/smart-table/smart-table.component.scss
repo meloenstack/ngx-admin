@@ -1,3 +1,4 @@
+// prettier-ignore
 @import '../../../@theme/styles/themes';
 
 @include nb-install-component() {
@@ -53,9 +54,10 @@ a {
   border-right: none;
 }
 
+// TABLE HEADERS
 :host ::ng-deep .ng2-smart-title,
 :host ::ng-deep ng2-smart-table-title > a {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .table-style {

@@ -46,12 +46,20 @@ export class SmartTableComponent {
         title: "Status",
         type: "string",
       },
-      amount: {
-        title: "Amount",
-        type: "string",
-      },
       order_status: {
         title: "Order Status",
+        type: "number",
+      },
+      withdrawal_status: {
+        title: "Withdrawal Status",
+        type: "string",
+      },
+      payout_type: {
+        title: "Payout Type",
+        type: "string",
+      },
+      amount: {
+        title: "Amount",
         type: "number",
       },
     },
