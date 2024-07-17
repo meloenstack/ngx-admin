@@ -204,15 +204,15 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: "Settlement",
-        link: "/pages/tables/smart-table",
+        link: "/pages/payments/settlement",
       },
       {
         title: "Manual Entries",
-        link: "/pages/tables/tree-grid",
+        link: "/pages/payments/manual-entries",
       },
       {
         title: "Remittances",
-        link: "/pages/tables/tree-grid",
+        link: "/pages/payments/remittances",
       },
     ],
   },

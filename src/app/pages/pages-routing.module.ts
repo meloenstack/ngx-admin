@@ -66,7 +66,7 @@ const routes: Routes = [
       //     import("./editors/editors.module").then((m) => m.EditorsModule),
       // },
       {
-        path: "tables",
+        path: "payments",
         loadChildren: () =>
           import("./tables/tables.module").then((m) => m.TablesModule),
       },
@@ -79,7 +79,7 @@ const routes: Routes = [
       // },
       {
         path: "",
-        redirectTo: "tables/smart-table",
+        redirectTo: "payments",
         pathMatch: "full",
       },
       {
