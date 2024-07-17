@@ -1,14 +1,12 @@
 import { Component } from "@angular/core";
 import { LocalDataSource } from "ng2-smart-table";
-
-import { SmartTableData } from "../../../@core/data/smart-table";
-
+import { SmartTableData } from "../../../../@core/data/smart-table";
 @Component({
-  selector: "remittance-table",
-  templateUrl: "./remittance.component.html",
-  styleUrls: ["./remittance.component.scss"],
+  selector: "ngx-pending",
+  templateUrl: "./pending.component.html",
+  styleUrls: ["./pending.component.scss"],
 })
-export class RemittanceTableComponent {
+export class PendingComponent {
   settings = {
     // add: {
     //   addButtonContent: '<i class="nb-plus"></i>',

@@ -5,34 +5,46 @@
       <nav>
         <ul class="nav">
           <li class="nav-item round-left">
-            <a class="nav-link active" routerLink="/pages/tables/smart-table"
+            <a
+              class="nav-link"
+              routerLink="/pages/payments/remittance/pending"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >Pending</a
             >
           </li>
           <li class="nav-item inner-nav-item">
-            <a class="nav-link" routerLink="/pages/tables/smart-table"
+            <a
+              class="nav-link"
+              routerLink="/pages/payments/remittance/for-payout"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >For Payout</a
             >
           </li>
           <li class="nav-item inner-nav-item">
-            <a class="nav-link" routerLink="/pages/tables/smart-table"
+            <a
+              class="nav-link"
+              routerLink="/pages/payments/remittance/paid-out"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
               >Paid Out</a
             >
           </li>
           <li class="nav-item round-right">
-            <a class="nav-link" routerLink="/pages/tables/smart-table">All</a>
+            <a
+              class="nav-link"
+              routerLink="/pages/payments/remittance/all"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >All</a
+            >
           </li>
         </ul>
       </nav>
       <button class="upload-csv-button">Upload CSV</button>
     </div>
-
-    <ng2-smart-table
-      [settings]="settings"
-      [source]="source"
-      class="table-style"
-      (deleteConfirm)="onDeleteConfirm($event)"
-    >
-    </ng2-smart-table>
+    <!-- TABLES DISPLAYED HERE -->
+    <router-outlet></router-outlet>
   </nb-card-body>
 </nb-card>

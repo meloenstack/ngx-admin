@@ -5,6 +5,10 @@ import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { ThemeModule } from '../../@theme/theme.module';
 import { TablesRoutingModule, routedComponents } from './tables-routing.module';
 import { FsIconComponent } from './tree-grid/tree-grid.component';
+import { PendingComponent } from './remittance/pending/pending.component';
+import { ForPayoutComponent } from './remittance/for-payout/for-payout.component';
+import { PaidOutComponent } from './remittance/paid-out/paid-out.component';
+import { AllComponent } from './remittance/all/all.component';
 
 @NgModule({
   imports: [
@@ -19,6 +23,10 @@ import { FsIconComponent } from './tree-grid/tree-grid.component';
   declarations: [
     ...routedComponents,
     FsIconComponent,
+    PendingComponent,
+    ForPayoutComponent,
+    PaidOutComponent,
+    AllComponent,
   ],
 })
 export class TablesModule { }
