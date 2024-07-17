@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 import { TablesComponent } from "./tables.component";
-import { SmartTableComponent } from "./smart-table/smart-table.component";
+import { RemittanceTableComponent } from "./remittance/remittance.component";
 import { TreeGridComponent } from "./tree-grid/tree-grid.component";
 
 const routes: Routes = [
@@ -12,19 +12,15 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        redirectTo: "settlement",
+        redirectTo: "remittance",
         pathMatch: "full",
       },
       {
-        path: "settlement",
-        component: SmartTableComponent,
+        path: "remittance",
+        component: RemittanceTableComponent,
       },
       {
-        path: "manual-entries",
-        component: TreeGridComponent,
-      },
-      {
-        path: "remittances",
+        path: "manual-withdrawal",
         component: TreeGridComponent,
       },
     ],
@@ -39,6 +35,6 @@ export class TablesRoutingModule {}
 
 export const routedComponents = [
   TablesComponent,
-  SmartTableComponent,
+  RemittanceTableComponent,
   TreeGridComponent,
 ];

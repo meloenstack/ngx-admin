@@ -68,7 +68,7 @@ const routes: Routes = [
       {
         path: "payments",
         loadChildren: () =>
-          import("./tables/tables.module").then((m) => m.TablesModule),
+          import("./payments/tables.module").then((m) => m.TablesModule),
       },
       // {
       //   path: "miscellaneous",

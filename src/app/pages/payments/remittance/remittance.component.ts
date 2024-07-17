@@ -5,10 +5,10 @@ import { SmartTableData } from "../../../@core/data/smart-table";
 
 @Component({
   selector: "ngx-smart-table",
-  templateUrl: "./smart-table.component.html",
-  styleUrls: ["./smart-table.component.scss"],
+  templateUrl: "./remittance.component.html",
+  styleUrls: ["./remittance.component.scss"],
 })
-export class SmartTableComponent {
+export class RemittanceTableComponent {
   settings = {
     // add: {
     //   addButtonContent: '<i class="nb-plus"></i>',

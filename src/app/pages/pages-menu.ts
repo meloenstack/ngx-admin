@@ -203,16 +203,12 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: "grid-outline",
     children: [
       {
-        title: "Settlement",
-        link: "/pages/payments/settlement",
+        title: "Remittance",
+        link: "/pages/payments/remittance",
       },
       {
-        title: "Manual Entries",
-        link: "/pages/payments/manual-entries",
-      },
-      {
-        title: "Remittances",
-        link: "/pages/payments/remittances",
+        title: "Manual Withdrawal",
+        link: "/pages/payments/manual-withdrawal",
       },
     ],
   },
