@@ -51,3 +51,12 @@ a {
 .inner-nav-item {
   border-right: none;
 }
+
+:host ::ng-deep .ng2-smart-title,
+:host ::ng-deep ng2-smart-table-title > a {
+  font-size: 0.9rem;
+}
+
+.table-style {
+  font-size: 0.9rem;
+}
