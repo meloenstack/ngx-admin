@@ -1,15 +1,14 @@
-import { Component } from '@angular/core';
-import { LocalDataSource } from 'ng2-smart-table';
+import { Component } from "@angular/core";
+import { LocalDataSource } from "ng2-smart-table";
 
-import { SmartTableData } from '../../../@core/data/smart-table';
+import { SmartTableData } from "../../../@core/data/smart-table";
 
 @Component({
-  selector: 'ngx-smart-table',
-  templateUrl: './smart-table.component.html',
-  styleUrls: ['./smart-table.component.scss'],
+  selector: "ngx-smart-table",
+  templateUrl: "./smart-table.component.html",
+  styleUrls: ["./smart-table.component.scss"],
 })
 export class SmartTableComponent {
-
   settings = {
     add: {
       addButtonContent: '<i class="nb-plus"></i>',
@@ -26,29 +25,29 @@ export class SmartTableComponent {
       confirmDelete: true,
     },
     columns: {
-      id: {
-        title: 'ID',
-        type: 'number',
+      user_id: {
+        title: "User ID",
+        type: "number",
       },
-      firstName: {
-        title: 'First Name',
-        type: 'string',
+      order_id: {
+        title: "Order ID",
+        type: "number",
       },
-      lastName: {
-        title: 'Last Name',
-        type: 'string',
+      payment_channel: {
+        title: "Payment Channel",
+        type: "string",
       },
-      username: {
-        title: 'Username',
-        type: 'string',
+      status: {
+        title: "Status",
+        type: "string",
       },
-      email: {
-        title: 'E-mail',
-        type: 'string',
+      amount: {
+        title: "Amount",
+        type: "string",
       },
-      age: {
-        title: 'Age',
-        type: 'number',
+      order_status: {
+        title: "Order Status",
+        type: "number",
       },
     },
   };
@@ -61,7 +60,7 @@ export class SmartTableComponent {
   }
 
   onDeleteConfirm(event): void {
-    if (window.confirm('Are you sure you want to delete?')) {
+    if (window.confirm("Are you sure you want to delete?")) {
       event.confirm.resolve();
     } else {
       event.confirm.reject();
