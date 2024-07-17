@@ -1,10 +1,33 @@
 <nb-card>
-  <nb-card-header>
-    Smart Table
-  </nb-card-header>
-
+  <nb-card-header> Transactions </nb-card-header>
   <nb-card-body>
-    <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+    <nav>
+      <ul class="nav">
+        <li class="nav-item round-left">
+          <a class="nav-link active" routerLink="/pages/tables/smart-table"
+            >Pending</a
+          >
+        </li>
+        <li class="nav-item inner-nav-item">
+          <a class="nav-link" routerLink="/pages/tables/smart-table"
+            >For Payout</a
+          >
+        </li>
+        <li class="nav-item inner-nav-item">
+          <a class="nav-link" routerLink="/pages/tables/smart-table"
+            >Paid Out</a
+          >
+        </li>
+        <li class="nav-item round-right">
+          <a class="nav-link" routerLink="/pages/tables/smart-table">All</a>
+        </li>
+      </ul>
+    </nav>
+    <ng2-smart-table
+      [settings]="settings"
+      [source]="source"
+      (deleteConfirm)="onDeleteConfirm($event)"
+    >
     </ng2-smart-table>
   </nb-card-body>
 </nb-card>

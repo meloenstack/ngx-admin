@@ -1,7 +1,53 @@
-@import '../../../@theme/styles/themes';
+@import "../../../@theme/styles/themes";
 
 @include nb-install-component() {
   nb-card {
     transform: translate3d(0, 0, 0);
   }
+}
+
+nav {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  border: 1px solid #edf1f7;
+  min-width: 100px;
+  overflow: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.active {
+  color: white;
+  background-color: #3366ff;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.round-left {
+  border-radius: 10px 0 0 10px;
+  border-right: none;
+}
+
+.round-right {
+  border-radius: 0 10px 10px 0;
+}
+
+.inner-nav-item {
+  border-right: none;
 }
