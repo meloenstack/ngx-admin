@@ -1,4 +1,4 @@
-@import '../../../@theme/styles/themes';
+@import "../../../@theme/styles/themes";
 
 @include nb-install-component() {
   nb-card {
@@ -8,7 +8,7 @@
 
 nav {
   display: flex;
-  margin-bottom: 20px;
+  align-items: center;
 }
 
 ul {
@@ -19,7 +19,7 @@ ul {
 li {
   display: inline;
   border: 1px solid #edf1f7;
-  min-width: 100px;
+  min-width: 135px;
   overflow: hidden;
 }
 
@@ -27,11 +27,12 @@ a {
   color: black;
   text-decoration: none;
   text-align: center;
+  font-size: 13px;
 }
 
 .active {
   color: white;
-  background-color: #3366ff;
+  background-color: #5abcea;
 }
 
 .nav {
@@ -54,9 +55,26 @@ a {
 
 :host ::ng-deep .ng2-smart-title,
 :host ::ng-deep ng2-smart-table-title > a {
-  font-size: 0.9rem;
+  font-size: 13px;
 }
 
 .table-style {
-  font-size: 0.9rem;
+  font-size: 13px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.upload-csv-button {
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 5px;
+  color: black;
+  border: none;
+  background-color: #d9d9d9;
 }

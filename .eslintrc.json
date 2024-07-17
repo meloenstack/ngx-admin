@@ -13,6 +13,7 @@
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
+        "quotes": "off",
         "@angular-eslint/no-input-rename": "off",
         "@angular-eslint/component-selector": [
           "error",

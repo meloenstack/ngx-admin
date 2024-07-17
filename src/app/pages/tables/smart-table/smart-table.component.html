@@ -1,28 +1,32 @@
 <nb-card>
   <nb-card-header> Transactions </nb-card-header>
   <nb-card-body>
-    <nav>
-      <ul class="nav">
-        <li class="nav-item round-left">
-          <a class="nav-link active" routerLink="/pages/tables/smart-table"
-            >Pending</a
-          >
-        </li>
-        <li class="nav-item inner-nav-item">
-          <a class="nav-link" routerLink="/pages/tables/smart-table"
-            >For Payout</a
-          >
-        </li>
-        <li class="nav-item inner-nav-item">
-          <a class="nav-link" routerLink="/pages/tables/smart-table"
-            >Paid Out</a
-          >
-        </li>
-        <li class="nav-item round-right">
-          <a class="nav-link" routerLink="/pages/tables/smart-table">All</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header">
+      <nav>
+        <ul class="nav">
+          <li class="nav-item round-left">
+            <a class="nav-link active" routerLink="/pages/tables/smart-table"
+              >Pending</a
+            >
+          </li>
+          <li class="nav-item inner-nav-item">
+            <a class="nav-link" routerLink="/pages/tables/smart-table"
+              >For Payout</a
+            >
+          </li>
+          <li class="nav-item inner-nav-item">
+            <a class="nav-link" routerLink="/pages/tables/smart-table"
+              >Paid Out</a
+            >
+          </li>
+          <li class="nav-item round-right">
+            <a class="nav-link" routerLink="/pages/tables/smart-table">All</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="upload-csv-button">Upload CSV</button>
+    </div>
+
     <ng2-smart-table
       [settings]="settings"
       [source]="source"
