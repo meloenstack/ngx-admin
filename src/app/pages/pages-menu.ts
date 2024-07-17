@@ -199,15 +199,19 @@ export const MENU_ITEMS: NbMenuItem[] = [
   //   ],
   // },
   {
-    title: "Tables & Data",
+    title: "Payments",
     icon: "grid-outline",
     children: [
       {
-        title: "Smart Table",
+        title: "Settlement",
         link: "/pages/tables/smart-table",
       },
       {
-        title: "Tree Grid",
+        title: "Manual Entries",
+        link: "/pages/tables/tree-grid",
+      },
+      {
+        title: "Remittances",
         link: "/pages/tables/tree-grid",
       },
     ],
