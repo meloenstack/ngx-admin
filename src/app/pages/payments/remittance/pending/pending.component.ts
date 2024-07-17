@@ -24,9 +24,13 @@ export class PendingComponent {
     // },
     actions: false,
     columns: {
-      firstName: {
-        title: "First Name",
-        type: "string",
+      // firstName: {
+      //   title: "First Name",
+      //   type: "string",
+      // },
+      date_created: {
+        title: "Date Created",
+        type: "date",
       },
       user_id: {
         title: "User ID",
@@ -40,10 +44,6 @@ export class PendingComponent {
         title: "Payment Channel",
         type: "string",
       },
-      status: {
-        title: "Status",
-        type: "string",
-      },
       order_status: {
         title: "Order Status",
         type: "number",
@@ -52,13 +52,13 @@ export class PendingComponent {
         title: "Withdrawal Status",
         type: "string",
       },
-      payout_type: {
-        title: "Payout Type",
-        type: "string",
-      },
-      amount: {
-        title: "Amount",
+      order_amount: {
+        title: "Order Amount",
         type: "number",
+      },
+      action: {
+        title: "Action",
+        type: "string",
       },
     },
   };
